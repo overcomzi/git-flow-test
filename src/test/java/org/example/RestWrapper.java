@@ -1,9 +1,6 @@
 package org.example;
 
-import io.restassured.http.ContentType;
 import org.example.services.PetService;
-
-import static io.restassured.RestAssured.given;
 
 public class RestWrapper {
     private static String BASE_URL = "https://petstore.swagger.io/v2";
