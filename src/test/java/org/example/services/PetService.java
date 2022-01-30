@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 
 public class PetService extends RestService {
     public CreatePetResponse createPet(PetRequest petRequest) {
-        Response response = (Response) given()
+        Response response = given()
                 .spec(REQ_SPEC)
                 .body(petRequest)
                 .post();
